@@ -26,10 +26,10 @@ public class BookController {
 	private final List<Book> books = new ArrayList<Book>();
 
 	private void initializeBooks() {
-		books.addAll(List.of(new Book("Science One", "Author One", "Science"),
-				new Book("Science Two", "Author Two", "Science"), new Book("History Three", "Author Three", "History"),
-				new Book("Math Four", "Author Four", "Math"), new Book("Civics Five", "Author Five", "Civics"),
-				new Book("Geography Six", "Author Six", "Geography")));
+		books.addAll(List.of(new Book(1, "Master High School Science", "D Majumdaar", "Science", 5),
+				new Book(2, "Science Demystified", "John Duncan", "Science", 5), new Book(3, "History Revealed", "K Luthra", "History", 4),
+				new Book(4, "Calculus", "Husseler", "Math", 2), new Book(5, "Civics Today", "Michael Morris", "Civics", 4),
+				new Book(6, "Our Planet", "D Attemborough", "Geography", 5)));
 	}
 
 	@GetMapping("/api-endpoint")
